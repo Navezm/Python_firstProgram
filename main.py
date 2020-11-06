@@ -4,21 +4,32 @@ quotes = [
 ]
 
 characters = [
-    "Alvin et les Chipmunks",
-    "Babar",
+    "alvin et les Chipmunks",
+    "babar",
     "Betty Boop",
     "Calimero",
-    "Casper",
+    "casper",
     "Le chat Potté",
-    "Kirikou"
+    "kirikou"
 ]
 
-if user_answer == "B":
-    pass
-elif user_answer == "C":
-    print("C pas la bonne réponse ! Et G pas d'humour, je C...")
-else:
-    pass
+def show_random_quote(my_list):
+    # TO DO get a random number
+    item = my_list[1] # quote from the list
+    print(item)
+    return "Everything went well!"
 
-def show_random_quote():
-    pass
+# user_answer = input("Tapez entrée pour connaitre une autre citation ou B pour quitter le programme.")
+
+# while user_answer != "B":
+#     print(show_random_quote(quotes))
+#     user_answer = input("Tapez entrée pour connaitre une autre citation ou B pour quitter le programme.")
+
+# for item in characters:
+#     up_item = item.capitalize()
+#     print(up_item)
+
+def create_message(character, quote):
+    print("{} a dit : {}".format(character, quote))
+
+create_message(characters[0], quotes[1])
